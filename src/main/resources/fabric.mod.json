@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "parkour",
+	"version": "${version}",
+	"name": "Parkour",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/parkour/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.supergamer.parkour.Parkour"
+		],
+		"client": [
+			"net.supergamer.parkour.ParkourClient"
+		],
+		"fabric-datagen": [
+			"net.supergamer.parkour.ParkourDataGenerator"
+		]
+	},
+	"mixins": [
+		"parkour.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
